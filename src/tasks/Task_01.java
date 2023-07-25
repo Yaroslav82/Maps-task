@@ -21,7 +21,7 @@ public class Task_01 {
     }
 
     private static void updateProducts(Map<String, Integer> products) {
-        products.put("banana", 14);
+        products.replace("banana", 14);
         products.put("plum", 15);
     }
 
