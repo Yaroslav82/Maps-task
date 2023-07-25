@@ -8,6 +8,10 @@ public class Task_02 {
 
     private final static Map<String, Integer> products = getProducts();
 
+    public static void main(String[] args) {
+        findProduct(getProductName());
+    }
+
     private static String getProductName() {
         System.out.print("Enter the name of the product you want to find: ");
         Scanner scanner = new Scanner(System.in);
