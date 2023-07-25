@@ -6,6 +6,13 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class Task_03 {
 
+    public static void main(String[] args) {
+        Map<String, String> contacts = getContacts();
+        getOutput("Initial contacts:", contacts);
+        editContacts(contacts);
+        getOutput("Updated contacts:", contacts);
+    }
+
     private static void getOutput(String title, Map<String, String> contacts) {
         System.out.println(title);
         AtomicInteger counter = new AtomicInteger(1);
