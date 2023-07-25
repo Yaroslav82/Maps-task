@@ -2,10 +2,17 @@ package tasks;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 public class Task_02 {
 
     private final static Map<String, Integer> products = getProducts();
+
+    private static String getProductName() {
+        System.out.print("Enter the name of the product you want to find: ");
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextLine().trim();
+    }
 
     private static void findProduct(String product) {
         if (products.containsKey(product)) {
